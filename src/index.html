@@ -9,16 +9,63 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <svg class="logo__icon">
-          <use xlink:href="#logo-green"></use>
-        </svg>
-        <span class="logo__text">Оптика</span>
+      <div class="header__top">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use xlink:href="#logo-green"></use>
+          </svg>
+          <span class="logo__text">Оптика</span>
+        </div>
+        <div class="header-top__links">
+          <a href="#">Контактные линзы<i class="decor-circle"></i></a>
+          <a href="#">Цветные линзы<i class="decor-circle"></i></a>
+          <a href="#">Средства ухода</a>
+          <a href="#">Готовые очки<i class="decor-circle"></i></a>
+          <a href="#">Оправы для детей<i class="decor-circle"></i></a>
+          <a href="#">Очки на заказ</a>
+        </div>
+        <div class="contacts">
+          <div class="contacts__address">
+            <svg class="contacts__address-icon">
+              <use xlink:href="#maps-and-flags"></use>
+            </svg>
+            <a href="#" class="contacts__address-link">Наши адреса</a>
+          </div>
+          <div class="contacts__tel">
+             <svg class="contacts__tel-icon">
+              <use xlink:href="#phone"></use>
+            </svg>
+            <a class="contacts__tel-link" href="tel:+78412441218">+7 (8412) <b class="contacts__tel-link-bold">44-12-18</b></a>
+          </div>
+        </div>
       </div>
-      <main class="main-menu">
 
+      <main class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a href="#" class="main-menu__link">O нас</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Продукция</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Новости и Акции</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Отзывы клиентов</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Вопрос - Ответ</a></li>
+          <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+        </ul>
       </main>
     </div>
   </header>
+
+  <div class="slider">
+    <div class="slider__wrapper">
+      <img class="active" src="common.blocks/slider/op_1.jpg" alt="image-1">
+      <!-- <img src="common.blocks/slider/op_2.jpg" alt="image-2"> -->
+      <div class="slider__next"></div>
+      <div class="slider__prev"></div>
+      <div class="slider__present present">
+        <p class="present__item">с 3 по 9 июля пройдите проверку зрения</p>
+        <p class="present__item present__item_large">бесплатно</p>
+        <p class="present__item">в любом из наших салонов</p>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>

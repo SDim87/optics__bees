@@ -46,7 +46,7 @@
 
 // jquery ui tabs
 // require('jquery-ui-css/tabs.css');
-// require("expose-loader?slider!jquery-ui/tabs");
+//require("expose-loader?slider!jquery-ui/tabs");
 
 // touch support for jquery ui
 // require("jquery-ui-touch-punch");
