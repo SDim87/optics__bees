@@ -10,8 +10,11 @@
   height: 48px;
   border-radius: 50%;
   background-image: url('next.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  top: calc(50% - 5px);
+  margin-top: -24px;
+  top: 50%;
   right: 30px;
 }
 .slider__prev {
@@ -19,19 +22,24 @@
   height: 48px;
   border-radius: 50%;
   background-image: url('prev.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  top: calc(50% - 5px);
+  margin-top: -24px;
+  top: 50%;
   left: 30px;
 }
 .slider__present {
   position: absolute;
-  bottom: 110px;
+  bottom: 17%;
   left: 50%;
-  margin-left: -41.5%;
+  margin-left: -24%;
 }
 .present {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgba(116, 69, 160, .8);
-  width: 83%; //936
+  width: 48%;
   text-align: center;
 }
 .present__item {
@@ -44,4 +52,103 @@
   text-transform: uppercase;
   font-size: 48px;
   line-height: 60px;
+}
+.slider__inners {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -50px;
+  color: #fff;
+  list-style: none;
+}
+.slider__inner {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  content: '';
+  margin-right: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .present {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .present__item {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .present__item_large {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .slider__inners {
+    bottom: 15px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .present {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .present__item {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .present__item_large {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .slider__next {
+    width: 32px;
+    height: 32px;
+  }
+  .slider__prev {
+    width: 32px;
+    height: 32px;
+  }
+  .slider__inner {
+    margin-right: 18px;
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider__present {
+    bottom: 25%;
+  }
+  .present {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .present__item {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .present__item_large {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .slider__next {
+    width: 26px;
+    height: 26px;
+  }
+  .slider__prev {
+    width: 26px;
+    height: 26px;
+  }
+  .slider__inner {
+    margin-right: 10px;
+    width: 7px;
+    height: 7px;
+  }
 }

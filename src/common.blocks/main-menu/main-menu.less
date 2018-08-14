@@ -1,14 +1,93 @@
-.main-menu__list {
+.main-nav__list {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-.main-menu__item {
+.main-nav__item {
   display: flex;
 }
-.main-menu__link {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.main-nav__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
+}
+.button-toggle {
+  display: none;
+}
+@media screen and (max-width: 940px) {
+  .main-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .main-nav__list {
+    display: none;
+  }
+  .main-nav_opened .main-nav__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav__item {
+    width: 100%;
+  }
+  .main-nav__link {
+    width: 100%;
+  }
+  .button-toggle {
+    display: block;
+    height: 25px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    position: relative;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  .main-nav_closed .button-toggle {
+    width: 50px;
+  }
+  .main-nav_closed .button-toggle::before{
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #555;
+    box-shadow: 0 10px 0 0 #555, 0 20px 0 0 #555;
+  }
+  .main-nav_opened .button-toggle {
+    width: 25px;
+  }
+  .main-nav_opened .button-toggle::before {
+    width: 3px;
+    height: 32px;
+    position: absolute;
+    top: -4px;
+    left: 11px;
+    content: "";
+    transform: rotate(45deg);
+    background-color: #555;
+  }
+  .main-nav_opened .button-toggle::after {
+    width: 3px;
+    height: 32px;
+    position: absolute;
+    top: -4px;
+    left: 11px;
+    content: "";
+    transform: rotate(-45deg);
+    background-color: #555;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main-nav__link {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
