@@ -1,0 +1,61 @@
+@import (reference) '../../less/variables.less';
+
+.facts {
+  padding-top: 116px;
+  padding-bottom: 116px;
+  background:  #e5e5e5 url('bg_facts.jpg') center no-repeat;
+  background-size: cover;
+}
+.facts .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.facts__item {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.facts__number {
+  font-weight: bold;
+  font-size: 80px;
+  color: @color-purple;
+}
+.facts__description {
+  font-family: @roboto;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .facts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .facts .container {
+    justify-content: center;
+  }
+  .facts__item {
+    margin-bottom: 40px;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .facts__description {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .facts__number {
+    font-size: 60px;
+  }
+  .facts__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
