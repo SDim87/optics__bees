@@ -1,3 +1,5 @@
+@import (reference) '../../less/variables.less';
+
 .advantages {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -33,10 +35,11 @@
 .advantages__item-icon {
   width: 143px;
   height: 143px;
+  margin-bottom: 40px;
 }
 
 .advantages__text {
-  font-family: 'Roboto', sans-serif;
+  font-family: @roboto;
   font-weight: bold;
   line-height: 36px;
   text-align: center;
@@ -49,6 +52,9 @@
   .advantages__item {
     width: 50%;
     margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   .advantages__text {
     width: 85%;

@@ -1,10 +1,12 @@
+@import (reference) '../../less/variables.less';
+
 .header {
   position: relative;
   z-index: 10;
   box-shadow: 0 5px 5px -6px rgba(50, 50, 50, .75);
 }
 .header .container:first-of-type {
-  border-bottom: 2px solid #1a9f29;
+  border-bottom: 2px solid @color-green;
 }
 .header__top {
   padding-top: 10px;
@@ -27,13 +29,13 @@
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
-  color: #1a9f29;
+  color: @color-green;
 }
 .header-top__links {
   width: 363px;
 }
 .header-top__links a {
-  font-family: 'Roboto', sans-serif;
+  font-family: @roboto;
   font-size: 14px;
   line-height: 22px;
 }
@@ -45,7 +47,7 @@
   content: '';
   vertical-align: middle;
   border-radius: 50%;
-  background-color: #1a9f29;
+  background-color: @color-green;
 }
 .contacts {
   width: 33%;
@@ -60,22 +62,19 @@
 }
 .contacts__address-link {
   margin-right: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: @roboto;
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
   text-decoration: underline;
 }
-.contacts__tel {
-
-}
 .contacts__tel-icon {
   width: 18px;
   height: 18px;
-  fill: #1a9f29;
+  fill: @color-green;
 }
 .contacts__tel-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: @roboto;
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
