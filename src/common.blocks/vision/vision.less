@@ -1,0 +1,44 @@
+@import (reference) '../../less/variables.less';
+
+.vision {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background: #fff url('bg_vision.jpg') center no-repeat;
+  background-size: contain;
+}
+.vision .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vision__image {
+  margin-bottom: 30px;
+}
+.vision__text {
+  font-family: @roboto;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 780px) {
+  .vision__image {
+    width: 355px;
+    height: 358px;
+  }
+  .vision__text {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .vision__image {
+    width: 255px;
+    height: 258px;
+  }
+  .vision__text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
