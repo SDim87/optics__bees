@@ -152,7 +152,7 @@
         <h2 class="about-us__title">О нас</h2>
         <p class="about-us__text">Мы любим своих клиентов, поэтому приятно удивим Вас качеством сервиса, постоянно обновляющимся ассортиментом оправ, солнцезащитных очков и линз по низким ценам. У нас Вы гарантированно сможете подобрать и купить очки, проверить зрение, выбрать подходящие линзы и аксессуары к ним.</p>
         <p class="about-us__text about-us__text--hidden">Наш штат насчитывает  14 человек, из них 2 взрослых врача-офтальмолога и 2 детских врача-офтальмолога. Нашими партнёрами являются такие крупные кампании как «Johnson&Johnson», «Алкон Фармацевтика», «Coopervision», «Конкор» и др. В наших салонах имеется самый большой выбор контактных линз в Поволжье. За 17 лет мы продали более 5 100 000 контактных линз.</p>
-        <a href="#" class="about-us__link">Подробнее</a>
+        <a href="#" class="btn about-us__btn">Подробнее</a>
       </div>
     </div>
   </section>
@@ -180,5 +180,57 @@
       <p class="vision__text">Пора купить линзы!</p>
     </div>
   </section>
+
+  <section class="feedback" style="background: #d3d1d1 url('${require('./common.blocks/feedback/bg_feedback.jpg')}'); height: auto; width: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="container">
+      <div class="modal">
+        <h3 class="modal__title">Задайте вопрос</h3>
+        <form action="#" class="modal__form">
+          <input type="text" class="modal__input" placeholder="Ваше имя *">
+          <input type="text" class="modal__input" placeholder="Ваш контактный телефон или e-mail">
+          <textarea class="modal__textarea modal__input" name="Сообщение" cols="30" rows="5" placeholder="Текст сообщения *"></textarea>
+          <div class="modal__wrapper">
+            <input class="modal__checkbox visually-hidden" type="checkbox" id="checkbox">
+            <label for="checkbox" class="modal__label-checkbox">Я соглашаюсь на обработку персональных данных</label>
+            <button class="btn modal__btn" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contacts">
+        <div class="logo">
+          <svg class="logo__icon">
+            <use xlink:href="#logo-green"></use>
+          </svg>
+          <span class="logo__text">Оптика</span>
+        </div>
+        <a class="footer__contacts-item" href="tel:+78412441218">Телефон : +7 (8412) 44-12-18</a>
+        <a class="footer__contacts-item" href="mailto:optica58@list.ru">E-mail: optica58@list.ru</a>
+        <a class="footer__contacts-item footer__contacts-item_conf" href="#">Политика конфиденциальности</a>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#">O нас</a></li>
+          <li class="footer__nav-item"><a href="#">Продукция</a></li>
+          <li class="footer__nav-item"><a href="#">Новости и Акции</a></li>
+        </ul>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#">Отзывы клиентов</a></li>
+          <li class="footer__nav-item"><a href="#">Вопрос - Ответ</a></li>
+          <li class="footer__nav-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="developer">
+        <span class="developer__text">Разработка сайта</span>
+        <img class="developer__logo" src="common.blocks/footer/logo_bees.png" alt="logo-bees">
+        <a href="http://onlinebees.ru" class="developer__link" target="_blank">onlinebees.ru</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
