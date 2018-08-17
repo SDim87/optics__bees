@@ -5,9 +5,11 @@
   z-index: 10;
   box-shadow: 0 5px 5px -6px rgba(50, 50, 50, .75);
 }
+
 .header .container:first-of-type {
   border-bottom: 2px solid @color-green;
 }
+
 .header__top {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -19,11 +21,13 @@
   display: flex;
   align-items: center;
 }
+
 .logo__icon {
   width: 46px;
   height: 44px;
   margin-right: 16px;
 }
+
 .logo__text {
   font-size: 30px;
   font-weight: bold;
@@ -31,14 +35,17 @@
   text-transform: uppercase;
   color: @color-green;
 }
+
 .header-top__links {
   width: 363px;
 }
+
 .header-top__links a {
   font-family: @roboto;
   font-size: 14px;
   line-height: 22px;
 }
+
 .decor-circle {
   width: 3px;
   height: 3px;
@@ -49,6 +56,7 @@
   border-radius: 50%;
   background-color: @color-green;
 }
+
 .contacts {
   width: 33%;
   margin-left: auto;
@@ -56,10 +64,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .contacts__address-icon {
   width: 13px;
   height: 18px;
 }
+
 .contacts__address-link {
   margin-right: 5px;
   font-family: @roboto;
@@ -68,40 +78,49 @@
   line-height: 16px;
   text-decoration: underline;
 }
+
 .contacts__tel-icon {
   width: 18px;
   height: 18px;
   fill: @color-green;
 }
+
 .contacts__tel-link {
   font-family: @roboto;
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
 }
+
 .contacts__tel-link-bold {
   font-weight: bold;
 }
+
 @media screen and (max-width: 890px) {
   .header-top__links {
     display: none;
   }
+
   .contacts {
     width: 300px;
   }
 }
+
 @media screen and (max-width: 540px) {
   .logo {
     margin-right: 5px;
   }
+
   .logo__icon {
     width: 36px;
     height: 34px;
     margin-right: 5px;
   }
+
   .logo__text {
     font-size: 20px;
   }
+
   .contacts {
     width: 164px;
     display: flex;
@@ -109,20 +128,25 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
   .contacts__address {
     order: 2;
   }
+
   .contacts__tel {
     order: 1;
   }
 }
+
 @media screen and (max-width: 460px) {
   .contacts {
     width: 147px;
   }
+
   .contacts__tel-link {
     font-size: 14px;
   }
+
   .contacts__address-link {
     font-size: 14px;
   }

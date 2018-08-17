@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hello world page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -55,23 +56,25 @@
       </nav>
     </div>
   </header>
-  <section class="slider">
+  <section class="slider" aria-label="Слайдер">
     <div class="slider__wrapper">
-      <img class="active" src="common.blocks/slider/op_1.jpg" alt="image-1">
-      <!-- <img src="common.blocks/slider/op_2.jpg" alt="image-2"> -->
-
+      <ul class="slider__list">
+        <li class="slider__item"><img src="common.blocks/slider/op_1.jpg" alt="1" class="slider__img"></li>
+        <li class="slider__item"><img src="common.blocks/slider/op_2.jpg" alt="2" class="slider__img"></li>
+      </ul>
       <div class="slider__next"></div>
       <div class="slider__prev"></div>
+
+      <ul class="slider__inners">
+        <li class="slider__inner"></li>
+        <li class="slider__inner"></li>
+        <li class="slider__inner slider__inner_disabled"></li>
+      </ul>
       <div class="slider__present present">
         <p class="present__item">с 3 по 9 июля пройдите проверку зрения</p>
         <p class="present__item present__item_large">бесплатно</p>
         <p class="present__item">в любом из наших салонов</p>
       </div>
-      <ul class="slider__inners">
-        <li class="slider__inner"></li>
-        <li class="slider__inner"></li>
-        <li class="slider__inner slider__inner"></li>
-      </ul>
     </div>
   </section>
 
@@ -157,7 +160,7 @@
     </div>
   </section>
 
-  <section class="facts">
+  <section class="facts" aria-label="Наши преимущества">
     <div class="container">
       <div class="facts__item">
         <p class="facts__number">17 лет</p>
@@ -174,7 +177,7 @@
     </div>
   </section>
 
-  <section class="vision">
+  <section class="vision" aria-label="Проверка зрения">
     <div class="container">
       <img class="vision__image" src="common.blocks/vision/img_vision.png" alt="Проверка зрения" >
       <p class="vision__text">Пора купить линзы!</p>
@@ -231,6 +234,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
